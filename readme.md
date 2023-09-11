@@ -2,6 +2,7 @@
 
 Fight tons of zombie in this top-down shooter game.
 Use powerfull spells and build your own strategy to survive as long as possible.
+Craft items, build structures and evolve them.
 Every game is different, with random generated map and random generated ennemies.
 you can also play with your friends in the multiplayer mode and try to survive together.
 After a game, you can upgrade your character and unlock new strategy to survive longer.
