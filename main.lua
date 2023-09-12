@@ -13,6 +13,7 @@ function love.load()
 end
 
 function love.update(dt)
+	sounds.update(dt)
 	currentDt = dt
 	mouse.update()
 	gameManager.update(dt)
@@ -36,4 +37,5 @@ function love.draw()
 	colors.set(colors.white)
 	gameManager.draw()
 	logger.draw()
+    love.graphics.print(sounds.list["menu-music"].source:getVolume(), 5, 5)
 end

@@ -58,6 +58,6 @@ gameManager = {}
 		if gameManager.gameState == "menu" then
 			menu.unload()
 		end
-		gameManager.gameState = "game"
+		gameManager.gameState = "characterSelect"
 		gameManager.load()
 	end

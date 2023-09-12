@@ -1,21 +1,19 @@
 local menu = {}
 
 	menu.deco = require("menu/menu-deco")
-	menu.sounds = require("menu/menu-sounds")
 	menu.ui = require("menu/menu-ui")
 
 	menu.music = nil
 
 	function menu.load()
 		menu.deco.load()
-		menu.sounds.load()
 		menu.ui.load()
 
 		logger.addLog("menu loaded", false)
 	end
 
 	function menu.unload()
-		menu.sounds.unload()
+		menu.deco.unload()
 		-- TODO: unload everything i can --
 	end
 

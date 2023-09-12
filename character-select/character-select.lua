@@ -19,7 +19,7 @@ local characterSelect = {}
 
 		characterSelect.name = love.graphics.newText(characterSelect.nameFont, characterSelect.currentCharacter.name)
 		characterSelect.nickname = love.graphics.newText(characterSelect.nicknameFont, characterSelect.currentCharacter.nickname)
-		characterSelect.description = love.graphics.newText(love.graphics.newFont(15), characterSelect.currentCharacter.description)
+		characterSelect.description = love.graphics.newText(characterSelect.textFont, characterSelect.currentCharacter.description)
 
 		-- characterSelect.cyrusName = love.graphics.newText(characterSelect.nameFont, characterSelect.cyrusName)
 		-- characterSelect.ethanName = love.graphics.newText(characterSelect.nameFont, characterSelect.ethanName)
@@ -43,7 +43,8 @@ local characterSelect = {}
 		love.graphics.draw(characterSelect.name, screen.width / 4 - characterSelect.name:getWidth() / 2 - 25, characterSelect.name:getHeight())
 		love.graphics.draw(characterSelect.nickname, screen.width / 4 - characterSelect.nickname:getWidth() / 2 - 25, characterSelect.nickname:getHeight() * 2)
 
-		love.graphics.draw(characterSelect.description, 25, 100)
+		love.graphics.setFont(love.graphics.newFont(15))
+		love.graphics.printf(characterSelect.currentCharacter.description, 25, 100, 325, "center")
 
 	end
 

@@ -11,8 +11,16 @@ local deco = {}
 		deco.titleFont = love.graphics.newFont("assets/fonts/shadowed-serif.TTF", 30)
 		deco.backgroundPicture = love.graphics.newImage("assets/menu/main-menu-background.jpg")
 		deco.title = love.graphics.newText(deco.titleFont, deco.title)
-		
+		sounds.music = love.audio.newSource("assets/sounds/music/lone-rider.mp3", 'stream')
+		sounds.add("music/lone-rider.mp3", "menu-music", 1, "stream")
+		sounds.play("menu-music")		
 		logger.addLog("menu deco loaded", false)
+	end
+
+	function deco.unload()
+		sounds.setVolume("menu-music", 0.3, true, 2)
+
+		logger.addLog("menu deco unloaded", false)
 	end
 
 

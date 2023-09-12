@@ -1,5 +1,7 @@
 currentDt = 0
 
+sounds = require("misc/sounds")
+
 screen = {}
 	screen.width = 800
 	screen.height = 600
