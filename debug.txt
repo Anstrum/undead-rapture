@@ -1,5 +1,8 @@
-09/12/23 - 10:02:18 | sound menu-music added
-09/12/23 - 10:02:18 | menu deco loaded
-09/12/23 - 10:02:18 | menu ui loaded
-09/12/23 - 10:02:18 | menu loaded
-09/12/23 - 10:02:18 | load complete
+09/13/23 - 10:14:58 | sound menu-music added
+09/13/23 - 10:14:58 | menu deco loaded
+09/13/23 - 10:14:58 | menu ui loaded
+09/13/23 - 10:14:58 | menu loaded
+09/13/23 - 10:14:58 | load complete
+09/13/23 - 10:14:59 | menu deco unloaded
+09/13/23 - 10:15:00 | character select selector loaded
+09/13/23 - 10:15:00 | character select loaded
