@@ -39,7 +39,8 @@ logger = {}
 		end
 	end
 	function logger.export()
-		local file = io.open("debug.txt", "w+")
+		os.execute("mkdir debug")
+		local file = io.open("debug/debug.txt", "w+")
 		io.output(file)
 
 		for i = 1, #logger.logs do
